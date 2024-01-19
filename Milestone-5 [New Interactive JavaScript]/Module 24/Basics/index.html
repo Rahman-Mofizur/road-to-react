@@ -19,14 +19,19 @@
 
     <!-- JS -->
     <script>
+      // HTML Elements
       let countries = document.getElementsByClassName("nation");
       console.log(countries);
       for (let country of countries) {
         console.log(country.innerText);
       }
 
-      let nations = document.querySelectorAll(".nation");
-      console.log(nations);
+      // NodeList
+      let nationList = document.querySelectorAll(".nation");
+      console.log(nationList);
+      for (let oneNation of nationList) {
+        console.log(oneNation.innerText);
+      }
     </script>
   </body>
 </html>
