@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Form</title>
+    <link rel="stylesheet" href="css/form-styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li>
+            <a href="">Blog</a>
+            <ul class="dropdown">
+              <li><a href="">World</a></li>
+              <li><a href="">Current Affairs</a></li>
+              <li><a href="">Business</a></li>
+            </ul>
+          </li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Please, fill up the form.</h2>
+        <form action="post">
+          <!-- The for of label = The id of input. -->
+          <!-- name prperties should be same as for. But id should be different. -->
+          <label for="name"
+            >Your Name:
+            <input id="name" type="text" placeholder="Enter your Name" />
+          </label>
+
+          <label for="email"
+            >Your email:
+            <input
+              name="email"
+              type="email"
+              placeholder="Enter your email"
+              name=""
+              id=""
+            />
+          </label>
+
+          <!-- Radio Button -->
+          <fieldset>
+            <legend>Chose your phone</legend>
+            <label for="phone"
+              ><input type="radio" name="phone" id="Note-3" />Samsung Note
+              3</label
+            >
+            <label for="Phone"
+              ><input type="radio" name="phone" id="Oppo" />Oppo A96</label
+            >
+            <label for="phone"
+              ><input type="radio" name="phone" id="A6" />Samsung A6</label
+            >
+          </fieldset>
+
+          <!-- Checkbox -->
+          <fieldset>
+            <legend>Chose your phone</legend>
+            <label for="Samsung"
+              ><input type="checkbox" name="Samsung" id="" />Samsung</label
+            ><label for="Apple"
+              ><input type="checkbox" name="Apple" id="" />Apple</label
+            ><label for="Huawei"
+              ><input type="checkbox" name="Huawei" id="" />Huawei</label
+            >
+          </fieldset>
+
+          <label for="car"
+            >Select your Car:
+            <select name="car" id="">
+              <option value="">Volvo</option>
+              <option value="">Toyota</option>
+              <option value="">Marcedes</option>
+            </select>
+          </label>
+
+          <!-- Special Instruction -->
+          <fieldset>
+            <legend>Special Instructions</legend>
+            <textarea name="comment" id="" cols="50" rows="10"> </textarea>
+          </fieldset>
+
+          <!-- Reset -->
+          <input type="reset" value="Reset" />
+
+          <!-- Submit -->
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+      <hr />
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

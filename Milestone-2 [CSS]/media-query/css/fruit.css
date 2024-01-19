@@ -1,0 +1,104 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.description {
+  text-align: justify;
+  border: 2px solid salmon;
+}
+
+.container img {
+  border: 2px solid aqua;
+}
+
+/* .container img {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.container .description {
+  border: 2px solid black;
+}
+
+.mango {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apple {
+  display: flex;
+  justify-content: space-evenly;
+} */
+
+/* This is another Container */
+
+.salat {
+  margin-top: 200px;
+  padding: 10px;
+  border: 2px solid slateblue;
+}
+
+.apple {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.mango {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse; /* Allow reverse in a row */
+  gap: 10px;
+}
+
+/* .flex-item {
+  flex: 1;
+  Allow each flex item to take up equal space
+} */
+
+.apple div {
+  flex: 1;
+}
+
+.mango div {
+  flex: 1;
+}
+
+.apple img {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.mango img {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.fruit-description {
+  border: 1px solid seagreen;
+  padding: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+@media screen and (max-width: 576px) {
+  .apple {
+    /* width: 100%; */
+    flex-direction: column;
+  }
+  .mango {
+    flex-direction: column;
+  }
+  .mango img {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .apple img {
+    margin-top: 20px;
+    width: 100%;
+  }
+}

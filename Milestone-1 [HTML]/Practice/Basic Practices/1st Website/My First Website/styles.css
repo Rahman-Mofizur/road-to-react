@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 5px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    color: indigo;
+}
+
+/* Attribute Selector */
+input[type="password"]{
+    color: blue;
+}
+
+.design_span{
+    background-color: lightblue;
+    /* Span is displayed as a Inline eliments but you can change its behaviour to block element. */
+    display:block;
+    /* display: inline-block; */
+}

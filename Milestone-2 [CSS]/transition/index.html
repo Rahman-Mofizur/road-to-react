@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform | Tranlate | Transition</title>
+
+    <!-- Styles -->
+    <style>
+      header {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 1.5rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+      .container {
+        background-color: lightseagreen;
+        border: 2px solid blueviolet;
+        height: 200px;
+        width: 300px;
+        margin-top: 50px;
+        margin-left: 10px;
+      }
+      .container-inner-sention {
+        background-color: pink;
+        border: 3px solid purple;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transform: scale(0.75);
+      }
+      #inner-2 {
+        /* transform: scale(X-axis, Y-axis) */
+        transform: scale(0.75, 0.25);
+      }
+      #inner-3 {
+        transform: scale(0.75) rotate(45deg);
+      }
+
+      /* CSS counts the updated one! the scale property will not count for this box because a new transform attribute is added! */
+      #inner-4 {
+        transform: translateX(20px) translateY(40px);
+      }
+      /*  */
+
+      /* Transition Styles */
+      .transition-box:hover {
+        width: 800px;
+        background-color: pink;
+        text-align: center;
+      }
+
+      /* Transition Property values */
+      /* property name | duration | delay */
+      /* property name | duration | easing function | delay */
+      #transitionBox-1 {
+        transition: width 2s;
+      }
+
+      /* property name | duration | easing function | delay */
+      #transitionBox-2 {
+        transition: width 2s linear 0.5s;
+      }
+
+      #transitionBox-3 {
+        transition: width 2s linear 0.25s, background-color 2s ease-in-out 1s;
+      }
+    </style>
+  </head>
+
+  <!-- Body -->
+  <body>
+    <header>
+      <div class="container">
+        <div class="container-inner-sention">Inner- 1</div>
+      </div>
+      <div class="container">
+        <div class="container-inner-sention" id="inner-2">Inner- 2</div>
+      </div>
+      <div class="container">
+        <div class="container-inner-sention" id="inner-3">Inner- 3</div>
+      </div>
+      <div class="container">
+        <div class="container-inner-sention" id="inner-4">Inner- 4</div>
+      </div>
+      <div class="container transition-box" id="transitionBox-1">
+        Transition Box- 1
+        <p>Width changes within 2 second</p>
+      </div>
+      <div class="container transition-box" id="transitionBox-2">
+        Transition Box- 2
+        <p>Width changes within 2 second, after 0.5 sec delay.</p>
+      </div>
+      <div class="container transition-box" id="transitionBox-3">
+        Transition Box- 3
+        <p>
+          Width & bg-color changes within 2 second, width after 0.5 sec &
+          bg-color after 1sec delay.
+        </p>
+      </div>
+    </header>
+  </body>
+</html>

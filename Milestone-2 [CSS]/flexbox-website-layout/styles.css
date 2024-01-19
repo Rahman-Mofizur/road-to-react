@@ -1,0 +1,31 @@
+.cal-1 {
+  display: flex;
+  justify-content: center;
+  border: 2px solid crimson;
+}
+
+.calendar h1 {
+  text-align: center;
+}
+
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  row-gap: 30px;
+  column-gap: 20px;
+}
+
+.date {
+  height: 40px;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.day {
+  background-color: darkorange;
+  border: 1px solid crimson;
+}
