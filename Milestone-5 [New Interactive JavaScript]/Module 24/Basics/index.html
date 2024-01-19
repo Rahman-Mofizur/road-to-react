@@ -19,18 +19,35 @@
 
     <!-- JS -->
     <script>
-      // HTML Elements
+      // Direct li er classname dhore kaj korar system
+      // 1. Through HTML Elements:
       let countries = document.getElementsByClassName("nation");
       console.log(countries);
       for (let country of countries) {
         console.log(country.innerText);
       }
 
-      // NodeList
+      // 2. Through NodeList:
       let nationList = document.querySelectorAll(".nation");
       console.log(nationList);
       for (let oneNation of nationList) {
         console.log(oneNation.innerText);
+      }
+
+      // ul er id gula k kivabe dhorbe?
+      // 1. Through HTML Elements
+      let states = document
+        .getElementById("country-name")
+        .getElementsByClassName("nation");
+      for (let state of states) {
+        console.log(state);
+        console.log(state.innerText);
+      }
+
+      // 2. Through NodeList
+      let emirates = document.querySelectorAll("#country-name .nation");
+      for (let emirate of emirates) {
+        console.log(emirate.innerText);
       }
     </script>
   </body>
