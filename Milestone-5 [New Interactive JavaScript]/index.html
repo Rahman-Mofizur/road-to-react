@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM- Document Object Model</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Countries to visit</h1>
+        <ul id="country-name">
+          <li class="nation">Malaysia</li>
+          <li class="nation">UAE</li>
+          <li class="nation">Saudi Arabia</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- JS -->
+    <script>
+      let countries = document.getElementsByClassName("nation");
+      console.log(countries);
+      for (let country of countries) {
+        console.log(country.innerText);
+      }
+
+      let nations = document.querySelectorAll(".nation");
+      console.log(nations);
+    </script>
+  </body>
+</html>
